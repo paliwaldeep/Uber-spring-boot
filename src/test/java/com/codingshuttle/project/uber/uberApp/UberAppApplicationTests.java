@@ -9,17 +9,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 class UberAppApplicationTests {
 
 
-	@Autowired
-	private EmailSenderService emailSenderService;
-
-	@Test
-	void contextLoads() {
-		emailSenderService.sendEmail(
-				"dosad49048@noidos.com",
-				"This is the Testing Email",
-				"Body of my email");
-	}
-
+//	@Autowired
+//	private EmailSenderService emailSenderService;
+//
+//	@Test
+//	void contextLoads() {
+//		emailSenderService.sendEmail(
+//				"dosad49048@noidos.com",
+//				"This is the Testing Email",
+//				"Body of my email");
+//	}
+//
 //	@Test
 //	void sendEmailMultiple(){
 //		String emails[] = {
