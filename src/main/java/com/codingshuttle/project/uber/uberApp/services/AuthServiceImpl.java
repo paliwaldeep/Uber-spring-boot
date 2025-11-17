@@ -1,4 +1,4 @@
-package com.codingshuttle.project.uber.uberApp.services.Impl;
+package com.codingshuttle.project.uber.uberApp.services;
 
 import com.codingshuttle.project.uber.uberApp.Security.JWTService;
 import com.codingshuttle.project.uber.uberApp.dto.DriverDto;

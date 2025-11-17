@@ -1,6 +1,5 @@
-package com.codingshuttle.project.uber.uberApp.services.Impl;
+package com.codingshuttle.project.uber.uberApp.services;
 
-import com.codingshuttle.project.uber.uberApp.services.DistanceService;
 import lombok.Data;
 import org.locationtech.jts.geom.Point;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.codingshuttle.project.uber.uberApp.controllers;
+package com.codingshuttle.project.uber.uberApp.services.impl;
 
 
 import com.codingshuttle.project.uber.uberApp.TestContainerConfiguration;
@@ -73,7 +73,6 @@ class AuthControllerTest {
 
     //    @Test
 //    @WithUserDetails("admin@gmail.com")
-
     void testOnboardDriver_success() {
 
         if (!userRepository.existsById(1L)) {

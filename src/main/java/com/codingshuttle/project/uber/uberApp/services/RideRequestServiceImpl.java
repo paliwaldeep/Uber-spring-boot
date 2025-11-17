@@ -1,4 +1,4 @@
-package com.codingshuttle.project.uber.uberApp.services.Impl;
+package com.codingshuttle.project.uber.uberApp.services;
 
 import com.codingshuttle.project.uber.uberApp.entities.RideRequest;
 import com.codingshuttle.project.uber.uberApp.exceptions.ResourceNotFoundException;
