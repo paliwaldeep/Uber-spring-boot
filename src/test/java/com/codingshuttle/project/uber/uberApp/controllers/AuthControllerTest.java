@@ -39,15 +39,14 @@ class AuthControllerTest {
 
     @BeforeEach
     void setUp() {
+
+        userRepository.deleteAll();
         user = new User();
-        user.setId(1L);
         user.setEmail("test@example.com");
         user.setPassword("password");
         user.setRoles(Set.of(Role.RIDER));
 
-        if (!userRepository.existsById(1L)) {
-            userRepository.save(user);
-        }
+        user = userRepository.save(user);
     }
 
     @Test
@@ -69,11 +68,13 @@ class AuthControllerTest {
 
     @Test
     void testOnboardDriver_success() throws Exception {
+
+        Long userId = user.getId();
         OnboardDriverDto onboardDriverDto = new OnboardDriverDto();
         onboardDriverDto.setVehicleId("ABC123");
 
         mockMvc.perform(
-                        post("/auth/onBoardNewDriver/1")
+                        post("/auth/onBoardNewDriver/" +userId)
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(objectMapper.writeValueAsString(onboardDriverDto))
                 )
